@@ -1,0 +1,8 @@
+body{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background-makerspace.png');
+    /* background-image: url('../images/Middel\ 3.png'); */
+    font-family: Arial, Helvetica, sans-serif;
+}
