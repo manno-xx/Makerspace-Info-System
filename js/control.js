@@ -1,6 +1,5 @@
 /* jshint esversion: 8 */
 
-// const url = "http://verbouw.manno.nl/wp-json/wp/v2/media?media_type=video";
 const url =
     "http://cmdgroningen.nl/makerspace/wp-json/wp/v2/media?media_type=video";
 
@@ -17,7 +16,7 @@ async function init() {
     video.addEventListener("ended", videoDone);
 
     await getVideoData();
-    // createVideoData();
+    // createDummyData();
     nextVideo(index);
 }
 
@@ -51,7 +50,7 @@ async function getVideoData() {
 /**
  * Generate test data of the video
  */
-function createVideoData() {
+function createDummyData() {
     videos = [];
     videos.push(
         {
@@ -81,7 +80,7 @@ function createVideoData() {
 function videoDone() {
     console.log("video done");
     index = ++index % videos.length;
-    nextVideo(index);
+    nextVideo();
 }
 
 /**
@@ -114,7 +113,7 @@ function playVideo(videoFile) {
  * @param {string} videoTitle The title of the video
  */
 function showTitle(videoTitle) {
-    document.getElementById("title").innerText = videoTitle;
+    document.getElementById("video-title").innerText = videoTitle;
 }
 
 /**
@@ -123,7 +122,7 @@ function showTitle(videoTitle) {
  */
 function showAuthors(authors) {
     let out = authors.join(" &middot; ");
-    document.getElementById("creators").innerHTML = out;
+    document.getElementById("authors").innerHTML = out;
 }
 
 /**
@@ -135,7 +134,7 @@ function showQRCode(url) {
     document.getElementById("qr").innerHTML = "";
     var qrc = new QRCode(document.getElementById("qr"), {
         text: url,
-        width: 75,
-        height: 75,
+        width: 250,
+        height: 250,
     });
 }

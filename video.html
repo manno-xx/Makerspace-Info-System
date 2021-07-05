@@ -6,8 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>video</title>
         
+        <link rel="stylesheet" href="https://use.typekit.net/grc3znh.css">
+
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/video.css" />
+
+        <meta name="description" content="Makerspace info system. Design by Romée van Voornveld, tech by Manno Bult">
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
@@ -16,9 +20,15 @@
             referrerpolicy="no-referrer"
         ></script>
 
-        <script src="js/control.js" defer></script>
+        <script src="js/slide.js" defer></script>
+        <script src="js/Video.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
     <body>
+
+        <h1 id="video-title">
+            --
+        </h1>
 
         <div id="video-box">
             <!-- The video -->
@@ -26,13 +36,13 @@
             </video>
         </div>
 
-        <!-- Optional: some overlay text to describe the video -->
-        <!-- <div class="content">
-            <div>
-                <h1 id="title">Heading</h1>
-                <p id="creators">Lorem ipsum...</p>
-            </div>
+        <div id="authors"></div>
+
+        <div id="description"></div>
+
+        <div id="qr-container">
             <div id="qr"></div>
-        </div> -->
+        </div>
+
     </body>
 </html>
