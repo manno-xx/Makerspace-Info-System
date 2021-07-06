@@ -6,4 +6,4 @@ Project to have an automated slideshow running videos, planning, events etc. on 
 
 For the Kiosk part, see: <https://pimylifeup.com/raspberry-pi-kiosk/>
 
-For the automated boot-shutdown sequence, an electrical timer is used for the booting. Crontab takes caree of the shutdown.
+For the automated boot-shutdown sequence, an electrical timer is used for the booting. Crontab takes care of the shutdown.
