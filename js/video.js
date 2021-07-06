@@ -57,7 +57,7 @@ class Video extends Slide {
         // this.playVideo();
     }
 
-    nextVideo(){
+    nextVideo() {
         this.index = ++this.index % this.videos.length;
     }
 
@@ -108,7 +108,7 @@ class Video extends Slide {
      * Displays the description of the video
      * @param {string} description The description of the video
      */
-    showVideoDescription(description){
+    showVideoDescription(description) {
         document.getElementById("description").innerHTML = description;
     }
 
@@ -118,12 +118,18 @@ class Video extends Slide {
      * @param {string} url The URL for the QR code
      */
     showQRCode(url) {
-        document.getElementById("qr").innerHTML = "";
-        var qrc = new QRCode(document.getElementById("qr"), {
-            text: url,
-            width: 250,
-            height: 250,
-        });
+        if (url.trim().length > 0) {
+            document.getElementById("qr-container").style.visibility = "visible";
+            document.getElementById("qr").innerHTML = "";
+            var qrc = new QRCode(document.getElementById("qr"), {
+                text: url,
+                width: 250,
+                height: 250,
+            });
+        }
+        else{
+            document.getElementById("qr-container").style.visibility = "hidden";
+        }
     }
 
     /**
@@ -142,15 +148,24 @@ class Video extends Slide {
             {
                 file: "media/1-min-vid.mp4",
                 title: "Project: Nova",
-                creators: ["Dylan Ventura", "Szilard Perenyi","Oleksandr Rogovskyi","Andrew Oduber"],
-                description: "Roguelite, Co-op Mobile Shooter. Play together, Die together, Learn together.",
+                creators: [
+                    "Dylan Ventura",
+                    "Szilard Perenyi",
+                    "Oleksandr Rogovskyi",
+                    "Andrew Oduber",
+                ],
+                description:
+                    "Roguelite, Co-op Mobile Shooter. Play together, Die together, Learn together.",
                 url: "https://play.google.com/store/apps/details?id=com.dylan.nova&hl=en_NZ",
             },
             {
                 file: "media/Axamer.mp4",
                 title: "Axamer VR experience",
-                creators: ["Edward Rocca, Vitalij Tilita, Esmeé de Visscher, Luke Shumacher"],
-                description: "A VR experience, skiing in the Axamer Lizum ski resort",
+                creators: [
+                    "Edward Rocca, Vitalij Tilita, Esmeé de Visscher, Luke Shumacher",
+                ],
+                description:
+                    "A VR experience, skiing in the Axamer Lizum ski resort",
                 url: "",
             }
         );
