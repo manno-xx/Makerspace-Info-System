@@ -73,6 +73,8 @@ class Video extends Slide {
 
         this.showAuthors(videoInfo.creators);
 
+        this.showVideoDescription(videoInfo.description);
+
         this.showQRCode(videoInfo.url);
     }
 
@@ -100,6 +102,14 @@ class Video extends Slide {
     showAuthors(authors) {
         let out = authors.join(" &middot; ");
         document.getElementById("authors").innerHTML = out;
+    }
+
+    /**
+     * Displays the description of the video
+     * @param {string} description The description of the video
+     */
+    showVideoDescription(description){
+        document.getElementById("description").innerHTML = description;
     }
 
     /**
