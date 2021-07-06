@@ -142,7 +142,7 @@ class Video extends Slide {
             {
                 file: "media/1-min-vid.mp4",
                 title: "Project: Nova",
-                creators: ["Danny Ventura", "Szilard Perenyi","Oleksandr Rogovskyi","Andrew Oduber"],
+                creators: ["Dylan Ventura", "Szilard Perenyi","Oleksandr Rogovskyi","Andrew Oduber"],
                 description: "Roguelite, Co-op Mobile Shooter. Play together, Die together, Learn together.",
                 url: "https://play.google.com/store/apps/details?id=com.dylan.nova&hl=en_NZ",
             },
