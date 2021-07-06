@@ -136,7 +136,7 @@ class Video extends Slide {
                 file: "media/SpaceGolf.mp4",
                 title: "Space Golf",
                 creators: ["Pelle", "Stupid++"],
-                description: "",
+                description: "A spacy trip in a golf cart",
                 url: "https://stupidplusplus.itch.io/generally-relative-space-golf",
             },
             {
@@ -149,9 +149,9 @@ class Video extends Slide {
             {
                 file: "media/Axamer.mp4",
                 title: "Axamer VR experience",
-                creators: ["Danny Ventura", "Szilard Perenyi","Oleksandr Rogovskyi","Andrew Oduber"],
-                description: "",
-                url: "https://play.google.com/store/apps/details?id=com.dylan.nova&hl=en_NZ",
+                creators: ["Edward Rocca, Vitalij Tilita, Esmeé de Visscher, Luke Shumacher"],
+                description: "A VR experience, skiing in the Axamer Lizum ski resort",
+                url: "",
             }
         );
     }

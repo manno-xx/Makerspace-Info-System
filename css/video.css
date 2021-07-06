@@ -34,6 +34,11 @@ body{
 }
 
 #authors{
+    font-family: cubano, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+
     position: absolute;
     left: 1500px;
     top: 195px;
@@ -42,10 +47,15 @@ body{
 }
 
 #description{
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+
     position: absolute;
     left: 1500px;
-    top: 290px;
-    text-align: center;
+    top: 340px;
+    width: 370px;
 }
 
 #qr-container{
