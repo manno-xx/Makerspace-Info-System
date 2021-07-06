@@ -126,19 +126,22 @@ class Video extends Slide {
                 file: "media/SpaceGolf.mp4",
                 title: "Space Golf",
                 creators: ["Pelle", "Stupid++"],
+                description: "",
                 url: "https://stupidplusplus.itch.io/generally-relative-space-golf",
             },
             {
-                file: "media/tiled.mp4",
-                title: "Working with tiles, Tiled and Phaser",
-                creators: ["manno bult"],
-                url: "http://www.manno.nl",
+                file: "media/1-min-vid.mp4",
+                title: "Project: Nova",
+                creators: ["Danny Ventura", "Szilard Perenyi","Oleksandr Rogovskyi","Andrew Oduber"],
+                description: "Roguelite, Co-op Mobile Shooter. Play together, Die together, Learn together.",
+                url: "https://play.google.com/store/apps/details?id=com.dylan.nova&hl=en_NZ",
             },
             {
-                file: "media/spritesheets.mp4",
-                title: "Working with spritesheets and Phaser",
-                creators: ["manno bult"],
-                url: "http://www.manno.nl",
+                file: "media/Axamer.mp4",
+                title: "Axamer VR experience",
+                creators: ["Danny Ventura", "Szilard Perenyi","Oleksandr Rogovskyi","Andrew Oduber"],
+                description: "",
+                url: "https://play.google.com/store/apps/details?id=com.dylan.nova&hl=en_NZ",
             }
         );
     }
