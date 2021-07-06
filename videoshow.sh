@@ -12,4 +12,4 @@ unclutter -idle 0.5 -root &
 #sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 
 
-/usr/bin/chromium-browser --noerrordialogs --disable-infobars --kiosk /home/pi/Documents/Pages/video.html --incognito
+/usr/bin/chromium-browser --noerrordialogs --disable-infobars --kiosk /home/pi/Documents/Makerspace-Info-System/video.html --incognito
