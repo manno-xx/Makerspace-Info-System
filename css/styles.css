@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 33% auto;
+    grid-template-rows: repeat(10, 10vh);
+}
+
+.calendar-day{
+    position: relative;
+    padding: 1em;
+    border: solid 0px;
+    border-bottom: solid black 1px;
+    grid-column: 1/2;
+    grid-row: auto;
+    background-color: azure;
+
+    /* border-top: 20px solid transparent; 
+    border-bottom: 20px solid transparent; /* 40px height (20+20) 
+    border-left:  20px solid green; */
+}
+
+.calendar-day:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 0;
+    height: 0;
+    border-left: solid 40px;
+    border-top: solid 40px  brown;
+    border-bottom: solid 40px  brown;
+}
+
+#scheduleinfo{
+    padding: 1em;
+    grid-column: 2/3;
+    grid-row: 1/11;
+    background-color: brown;
+}

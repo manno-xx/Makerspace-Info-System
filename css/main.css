@@ -1,8 +1,21 @@
 body{
-    background-color: #000;
+    color: #FFF;
     margin: 0;
     padding: 0;
-    background-image: url('../images/background-makerspace.png');
-    /* background-image: url('../images/Middel\ 3.png'); */
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../images/background-makerspace.png');
+}
+
+.slide{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    visibility: visible;
 }

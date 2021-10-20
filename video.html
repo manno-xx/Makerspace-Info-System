@@ -5,14 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>video</title>
-        
-        <link rel="stylesheet" href="https://use.typekit.net/grc3znh.css">
-        <link rel="stylesheet" href="https://use.typekit.net/bmy0csu.css">
+
+        <link rel="stylesheet" href="https://use.typekit.net/grc3znh.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/bmy0csu.css" />
 
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/video.css" />
 
-        <meta name="description" content="Makerspace info system. Design by Romée van Voornveld, tech by Manno Bult">
+        <meta
+            name="description"
+            content="Makerspace info system. Design by Romée van Voornveld, tech by Manno Bult"
+        />
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
@@ -26,24 +29,25 @@
         <script src="js/main.js" defer></script>
     </head>
     <body>
+        <div id="video" class="slide active">
+            <h1 id="video-title">--</h1>
 
-        <h1 id="video-title">
-            --
-        </h1>
+            <div id="video-box">
+                <!-- The video -->
+                <video autoplay muted id="myVideo"></video>
+            </div>
 
-        <div id="video-box">
-            <!-- The video -->
-            <video autoplay muted id="myVideo">
-            </video>
+            <div id="authors"></div>
+
+            <div id="description"></div>
+
+            <div id="qr-container">
+                <div id="qr"></div>
+            </div>
         </div>
 
-        <div id="authors"></div>
+        <div id="open" class="slide"></div>
 
-        <div id="description"></div>
-
-        <div id="qr-container">
-            <div id="qr"></div>
-        </div>
-
+        <div id="closed" class="slide"></div>
     </body>
 </html>
